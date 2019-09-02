@@ -19,9 +19,9 @@ def reduce_to_total(source_array, starting_point = 0)
 end
 
 def reduce_to_all_true(source_array)
-  source_array.reduce{ |n| n }
+  source_array.reduce() { |n| source_array.include?(false) ? n = false : n = true }
 end
 
 def reduce_to_any_true(source_array)
-    source_array.reduce{ |sum, n| sum + n }
+    source_array.reduce() { |n| source_array.include?(false) ? e = false : e = true }
 end
