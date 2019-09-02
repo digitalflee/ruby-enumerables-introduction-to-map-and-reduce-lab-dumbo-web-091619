@@ -24,7 +24,8 @@ end
 
 def reduce_to_any_true(source_array)
   n = 0 
-  
+  while n < source_array.length do
+    
   
   source_array.reduce{ |sum, n| sum + n }
 end
