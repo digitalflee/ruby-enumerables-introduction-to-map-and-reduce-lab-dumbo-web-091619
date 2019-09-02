@@ -23,5 +23,5 @@ def reduce_to_all_true(source_array)
 end
 
 def reduce_to_any_true(source_array)
-    source_array.reduce() { |n| source_array.include?(false) ? e = false : e = true }
+    source_array.reduce() { |n| source_array.include?(true) ? n = true : n = false }
 end
